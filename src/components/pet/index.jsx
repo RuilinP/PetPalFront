@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchAccessToken } from '../../ajax'; // Assuming ajax.js is in the same directory
+import { fetchAccessToken, fetchSinglePet } from '../../ajax'; // Assuming ajax.js is in the same directory
 import axios from 'axios'; 
 import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import { scrollToTop } from '../../assets/js/scroll';
@@ -49,7 +49,7 @@ function SinglePetInfo() {
     }
 
     fetchPetData();
-  }, [accessToken, petId, navigate]);
+  }, [accessToken, petId]);
 
   useEffect(() => {
     async function fetchShelterData() {
@@ -147,7 +147,7 @@ function SinglePetInfo() {
     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
       {classList[index] === 'embed-responsive-item' ? (
         <div className="embed-responsive embed-responsive-16by9 video-container">
-          <iframe className="embed-responsive-item" src={item} title="Video"></iframe>
+          <iframe className="embed-responsive-item" src={item}></iframe>
         </div>
       ) : (
         <img src={item} className="d-block" alt={`Slide ${index + 1}`} />
