@@ -147,7 +147,7 @@ function SinglePetInfo() {
     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
       {classList[index] === 'embed-responsive-item' ? (
         <div className="embed-responsive embed-responsive-16by9 video-container">
-          <iframe className="embed-responsive-item" src={item}></iframe>
+          <iframe className="embed-responsive-item" src={item} title="Video"></iframe>
         </div>
       ) : (
         <img src={item} className="d-block" alt={`Slide ${index + 1}`} />
