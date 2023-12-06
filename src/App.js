@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import PetList from './components/pets';
+// import PetList from './components/pets';
 import SinglePetInfo from './components/pet';
 import Landing from './pages/landing';
 // import Login from './components/login'
@@ -9,17 +9,17 @@ import Landing from './pages/landing';
 // import SearchPets from './components/Searchpets';
 
 // import ShelterReviews from './pages/CommentPages/ShelterCommentPage';
-import { UserProvider } from './contexts/UserContext';
+// import { UserProvider } from './contexts/UserContext';
 import NotFound from './pages/404';
 
 
 function App() {
   return (
-    <UserProvider>
+    // <UserProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/pets/" element={<PetList />} />
+        {/* <Route path="/pets/" element={<PetList />} /> */}
         <Route path="/pets/:petId" element={<SinglePetInfo />} />
         {/* <Route path="/login/" element={<Login />} />
         <Route path="/signup-shelter" element={<ShelterSignup />} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/404/" element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
-    </UserProvider>
+    // </UserProvider>
   );
 }
 

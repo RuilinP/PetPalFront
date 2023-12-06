@@ -40,10 +40,10 @@ class Landing extends React.Component {
             <div className="masthead mw-100 py-5 text-white text-center" style={{ backgroundImage: 'url("assets/images/header-image.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <h1 className="masthead-title">Rescue, Love, Repeat: Adopt a Pet Today!</h1>
                 <div className="py-3 d-flex gap-3 justify-content-center align-items-center">
-                    <div className="d-none d-lg-inline text-end landing-top-image"><img className="image" src="assets/images/landing-top2.jpg" /></div>
-                    <div className="d-none d-lg-inline landing-top-image landing-top-image-main"><img className="image" src="assets/images/landing-top1.png" /></div>
-                    <div className="d-none d-lg-inline text-start landing-top-image"><img className="image" src="assets/images/landing-top3.jpg" /></div>
-                    <div className="d-lg-none landing-top-image"><img className="image" src="assets/images/landing-top1.png" /></div>
+                    <div className="d-none d-lg-inline text-end landing-top-image"><img className="image" src="assets/images/landing-top2.jpg" alt="PetPal"/></div>
+                    <div className="d-none d-lg-inline landing-top-image landing-top-image-main"><img className="image" src="assets/images/landing-top1.png" alt="PetPal"/></div>
+                    <div className="d-none d-lg-inline text-start landing-top-image"><img className="image" src="assets/images/landing-top3.jpg" alt="PetPal"/></div>
+                    <div className="d-lg-none landing-top-image"><img className="image" src="assets/images/landing-top1.png" alt="PetPal"/></div>
                 </div>
                 <div className="pt-3">
                     <Link to="/search-pets" className="btn btn-dark" role="button">Search for a Petr</Link>
@@ -51,7 +51,7 @@ class Landing extends React.Component {
             </div>
 
             <div className="d-flex align-items-stretch bg-primary">
-                <img className="d-none d-lg-inline-block landing-row-thumb" src="assets/images/landing-1.jpg" />
+                <img className="d-none d-lg-inline-block landing-row-thumb" src="assets/images/landing-1.jpg" alt="PetPal"/>
                 <div className="p-5 d-flex flex-column justify-content-center">
                     <h1 className="pb-3">Looking to adopt a pet?</h1>
                     <p className="fs-5">Ready to bring a new furry friend into your life? Explore pet adoption! Find your perfect companion and provide a loving forever home to a pet in need. Start your journey today!</p>
@@ -69,7 +69,7 @@ class Landing extends React.Component {
                         <Link to="/signup-shelter" className="btn btn-dark" role="button">Signup as a Pet Shelter</Link>
                     </div>
                 </div>
-                <img className="d-none d-lg-inline-block landing-row-thumb img-responsive ms-auto" src="assets/images/landing-2.png" />
+                <img className="d-none d-lg-inline-block landing-row-thumb img-responsive ms-auto" src="assets/images/landing-2.png" alt="PetPal"/>
             </div>
         </div>
                 </main>

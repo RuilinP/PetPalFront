@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchAccessToken, fetchSinglePet } from '../../ajax'; // Assuming ajax.js is in the same directory
+import { fetchAccessToken } from '../../ajax'; // Assuming ajax.js is in the same directory
 import axios from 'axios'; 
 import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import { scrollToTop } from '../../assets/js/scroll';
@@ -49,7 +49,7 @@ function SinglePetInfo() {
     }
 
     fetchPetData();
-  }, [accessToken, petId]);
+  }, [accessToken, petId, navigate]);
 
   useEffect(() => {
     async function fetchShelterData() {

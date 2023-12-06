@@ -19,7 +19,7 @@ function PetList() {
 const [nextPageUrl, setNextPageUrl] = useState(null);
 const [previousPageUrl, setPreviousPageUrl] = useState(null);
 
-  const ages = ['Any', 'Baby', 'Young', 'Adult', 'Senior'];
+  // const ages = ['Any', 'Baby', 'Young', 'Adult', 'Senior'];
   const genders = ['Any', 'Male', 'Female'];
   const sizes = ['Any', 'Small', 'Medium', 'Large'];
   const navigate = useNavigate();
